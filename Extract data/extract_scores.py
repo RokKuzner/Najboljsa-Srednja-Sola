@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+import json
 
 # Setup driver for background use
 chrome_options = Options()
@@ -29,5 +30,9 @@ try:
             "name": str(row_items[1].text),
             "result": float(row_items[2].text.replace(",", "."))
         })
+
+    # Save data
+    with open("schools.json", "w", encoding="utf-8") as f:
+        f.write(json.dumps(data, ensure_ascii=False))
 finally:
     driver.quit()

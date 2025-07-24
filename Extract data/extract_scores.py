@@ -16,6 +16,18 @@ driver = webdriver.Chrome(options=chrome_options)
 try:
     driver.get("https://www.almamater.si/lestvicasol-srednjesole-s181")
 
-    #...
+    # Extract data
+    data = []
+    rows = driver.find_elements(By.CSS_SELECTOR, "tbody tr")
+    for row in rows:
+        row_items = row.find_elements(By.CSS_SELECTOR, "td div")
+
+        if not len(row_items) >= 3:
+            continue
+
+        data.append({
+            "name": str(row_items[1].text),
+            "result": float(row_items[2].text.replace(",", "."))
+        })
 finally:
     driver.quit()

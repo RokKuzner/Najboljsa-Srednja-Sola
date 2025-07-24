@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import json
+import urllib.parse
 
 # Setup driver for background use
 chrome_options = Options()
@@ -19,7 +20,8 @@ with open("schools.json", "r") as f:
     schools = json.load(f)
 
 try:
-    driver.get("")
+    for school in schools:
+        search_url = "https://www.24ur.com/iskanje?q=" + urllib.parse.quote_plus(school["name"])
 except Exception as e:
     print("Exception:", e)
 finally:

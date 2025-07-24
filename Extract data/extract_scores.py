@@ -27,7 +27,7 @@ try:
             continue
 
         data.append({
-            "name": str(row_items[1].text),
+            "name": " ".join( str( row_items[1].text ).strip().split() ),
             "result": float(row_items[2].text.replace(",", "."))
         })
 

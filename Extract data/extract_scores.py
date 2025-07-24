@@ -13,6 +13,9 @@ chrome_options.add_argument("--window-size=1920,1080")
 # Create driver
 driver = webdriver.Chrome(options=chrome_options)
 
-driver.get("https://www.almamater.si/lestvicasol-srednjesole-s181")
+try:
+    driver.get("https://www.almamater.si/lestvicasol-srednjesole-s181")
 
-driver.quit()
+    #...
+finally:
+    driver.quit()

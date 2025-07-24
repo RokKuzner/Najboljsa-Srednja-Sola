@@ -1,0 +1,326 @@
+[
+    {
+        "name": "Gimnazija Bežigrad",
+        "result": 98.37
+    },
+    {
+        "name": "Zavod Sv. Stanislava, Škofijska klasična gimnazija",
+        "result": 98.07
+    },
+    {
+        "name": "Gimnazija Vič",
+        "result": 97.77
+    },
+    {
+        "name": "Zavod sv. Frančiška Saleškega, Gimnazija Želimlje",
+        "result": 97.63
+    },
+    {
+        "name": "Gimnazija Franca Miklošiča Ljutomer",
+        "result": 96.55
+    },
+    {
+        "name": "Gimnazija Poljane",
+        "result": 95.92
+    },
+    {
+        "name": "l. gimnazija v Celju",
+        "result": 95.74
+    },
+    {
+        "name": "Gimnazija Kranj",
+        "result": 94.96
+    },
+    {
+        "name": "Srednja šola Črnomelj, Gimnazija",
+        "result": 94.87
+    },
+    {
+        "name": "II. gimnazija Maribor",
+        "result": 94.74
+    },
+    {
+        "name": "Srednja šola Josipa Jurčiča Ivančna Gorica",
+        "result": 94.17
+    },
+    {
+        "name": "Šolski center Srečka Kosovela Sežana- Gimnazija in ekonomska šola",
+        "result": 93.78
+    },
+    {
+        "name": "Dvojezična srednja šola Lendava",
+        "result": 93.35
+    },
+    {
+        "name": "Gimnazija Jurija Vege Idrija",
+        "result": 93.34
+    },
+    {
+        "name": "Prva gimnazija Maribor",
+        "result": 93.31
+    },
+    {
+        "name": "Škofijska gimnazija Vipava",
+        "result": 93.3
+    },
+    {
+        "name": "Gimnazija Koper",
+        "result": 93.3
+    },
+    {
+        "name": "Gimnazija Škofja Loka",
+        "result": 93.14
+    },
+    {
+        "name": "Gimnazija Litija",
+        "result": 92.95
+    },
+    {
+        "name": "Šolski center Velenje, Gimnazija",
+        "result": 92.51
+    },
+    {
+        "name": "Gimnazija in ekonomska srednja šola Trbovlje",
+        "result": 92.23
+    },
+    {
+        "name": "Srednja šola Slovenska Bistrica",
+        "result": 91.98
+    },
+    {
+        "name": "Srednja šola Veno Pilon Ajdovščina",
+        "result": 91.63
+    },
+    {
+        "name": "Gimnazija Novo mesto",
+        "result": 91.22
+    },
+    {
+        "name": "Gimnazija Ledina",
+        "result": 91.12
+    },
+    {
+        "name": "Gimnazija in srednja šola Rudolfa Maistra Kamnik",
+        "result": 91.1
+    },
+    {
+        "name": "Elektrotehniško-računalniška strokovna šola in gimnazija Ljubljana",
+        "result": 90.94
+    },
+    {
+        "name": "Šolski center Postojna, Srednja šola",
+        "result": 90.76
+    },
+    {
+        "name": "Gimnazija Ormož",
+        "result": 90.72
+    },
+    {
+        "name": "Šolski center Slovenske Konjice- Zreče, Gimnazija Slovenske Konjice",
+        "result": 90.32
+    },
+    {
+        "name": "Šolski center Ravne na Koroškem, Gimnazija Ravne na Koroškem",
+        "result": 90.22
+    },
+    {
+        "name": "Gimnazija Tolmin",
+        "result": 90.18
+    },
+    {
+        "name": "Šolski center Rogaška Slatina",
+        "result": 89.79
+    },
+    {
+        "name": "Šolski center Celje, Gimnazija Lava",
+        "result": 89.72
+    },
+    {
+        "name": "Gimnazija Brežice",
+        "result": 89.18
+    },
+    {
+        "name": "Gimnazija Jožeta Plečnika Ljubljana",
+        "result": 89.18
+    },
+    {
+        "name": "Gimnazija Celje- Center",
+        "result": 89.08
+    },
+    {
+        "name": "Gimnazija Šentvid",
+        "result": 88.88
+    },
+    {
+        "name": "Gimnazija Šiška",
+        "result": 88.59
+    },
+    {
+        "name": "Gimnazija Jesenice",
+        "result": 88.52
+    },
+    {
+        "name": "Šolski center Slovenj Gradec, Gimnazija",
+        "result": 88.51
+    },
+    {
+        "name": "Srednja šola Domžale",
+        "result": 88.41
+    },
+    {
+        "name": "Gimnazija Nova Gorica",
+        "result": 88.15
+    },
+    {
+        "name": "Šolski center Novo mesto, Srednja elektro šola in tehniška gimnazija",
+        "result": 87.31
+    },
+    {
+        "name": "Ekonomska šola Novo mesto,  Srednja šola in gimnazija",
+        "result": 87.3
+    },
+    {
+        "name": "Gimnazija Murska Sobota",
+        "result": 87.08
+    },
+    {
+        "name": "Konservatorij za glasbo in balet Ljubljana",
+        "result": 86.83
+    },
+    {
+        "name": "Gimnazija Ptuj",
+        "result": 86.8
+    },
+    {
+        "name": "Srednja vzgojiteljska šola in gimnazija Ljubljana",
+        "result": 86.06
+    },
+    {
+        "name": "Biotehniški izobraževalni center Ljubljana - Gimnazija in veterinarska šola",
+        "result": 85.86
+    },
+    {
+        "name": "Grm Novo mesto- center biotehnike in turizma, Kmetijska šola Grm in biotehniška gimnazija",
+        "result": 85.52
+    },
+    {
+        "name": "Šolski center Nova Gorica",
+        "result": 85.23
+    },
+    {
+        "name": "Gimnazija, elektro in pomorska šola Piran GEPS",
+        "result": 84.98
+    },
+    {
+        "name": "III.  gimnazija Maribor",
+        "result": 84.74
+    },
+    {
+        "name": "Gimnazija in srednja šola Kočevje",
+        "result": 84.73
+    },
+    {
+        "name": "Ekonomska gimnazija in srednja šola Radovljica",
+        "result": 83.81
+    },
+    {
+        "name": "Vzgojno-izobraževalni  zavod Antona Martina Slomška Maribor, Škofijska gimnazija Antona Martina Slomška",
+        "result": 83.77
+    },
+    {
+        "name": "Srednja elektro-računalniška šola Maribor",
+        "result": 83.75
+    },
+    {
+        "name": "Gimnazija Antonio Sema Piran",
+        "result": 83.1
+    },
+    {
+        "name": "Gimnazija in srednja kemijska šola Ruše",
+        "result": 82.33
+    },
+    {
+        "name": "Konservatorij za glasbo in balet Maribor",
+        "result": 82.09
+    },
+    {
+        "name": "Srednja tehniška šola Koper",
+        "result": 81.79
+    },
+    {
+        "name": "Šolski center Ljubljana, Gimnazija Antona Aškerca",
+        "result": 80.26
+    },
+    {
+        "name": "Srednja šola za oblikovanje in fotografijo Ljubljana",
+        "result": 79.71
+    },
+    {
+        "name": "Šolski center Krško- Sevnica,  Gimnazija Krško",
+        "result": 79.4
+    },
+    {
+        "name": "Ekonomska šola Murska Sobota",
+        "result": 78.66
+    },
+    {
+        "name": "Šolski center Kranj, Strokovna gimnazija",
+        "result": 77.61
+    },
+    {
+        "name": "Gimnazija Moste Ljubljana",
+        "result": 75.91
+    },
+    {
+        "name": "Ekonomska šola Celje, Gimnazija in srednja šola",
+        "result": 75.11
+    },
+    {
+        "name": "Gimnazija Franceta Prešerna",
+        "result": 74.73
+    },
+    {
+        "name": "Srednja ekonomska šola Maribor",
+        "result": 73.93
+    },
+    {
+        "name": "ERUDIO Izobraževalni center",
+        "result": 73.76
+    },
+    {
+        "name": "Biotehniški center Naklo - Srednja šola",
+        "result": 73.69
+    },
+    {
+        "name": "Šolski center Nova Gorica, OE Srednja ekonomska in trgovska šola",
+        "result": 73.57
+    },
+    {
+        "name": "Srednja gradbena šola in gimnazija Maribor",
+        "result": 72.8
+    },
+    {
+        "name": "Šolski center Ptuj, Ekonomska šola",
+        "result": 67.03
+    },
+    {
+        "name": "Ekonomska šola Ljubljana",
+        "result": 64.06
+    },
+    {
+        "name": "Gimnazija Gian Rinaldo Carli Koper",
+        "result": 63.63
+    },
+    {
+        "name": "Srednja tehniška in poklicna šola Trbovlje",
+        "result": 60.44
+    },
+    {
+        "name": "Waldorfska šola Ljubljana",
+        "result": 60.44
+    },
+    {
+        "name": "Srednja ekonomsko- poslovna šola Koper",
+        "result": 54.03
+    }
+]

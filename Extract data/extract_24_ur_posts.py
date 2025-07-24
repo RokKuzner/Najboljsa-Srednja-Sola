@@ -14,6 +14,10 @@ chrome_options.add_argument("--window-size=1920,1080")
 # Create driver
 driver = webdriver.Chrome(options=chrome_options)
 
+# Get school data
+with open("schools.json", "r") as f:
+    schools = json.load(f)
+
 try:
     driver.get("")
 except Exception as e:

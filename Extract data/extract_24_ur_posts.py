@@ -44,6 +44,10 @@ try:
         school["articles"] = articles
         schools[indx] = school
 
+    # Save data
+    with open("schools.json", "w", encoding="utf-8") as f:
+        f.write(json.dumps(schools, ensure_ascii=False))
+
 except Exception as e:
     print("Exception:", e)
 finally:

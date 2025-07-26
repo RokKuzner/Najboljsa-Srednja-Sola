@@ -20,6 +20,7 @@ with open("schools.json", "r") as f:
     schools = json.load(f)
 
 try:
+    # Extract articles
     for indx, school in enumerate(schools):
         search_url = "https://www.24ur.com/iskanje?q=" + urllib.parse.quote_plus(school["name"])
         driver.get(search_url)

@@ -6,17 +6,18 @@ with open("schools.json", "r") as f:
     schools = json.load(f)
 
 # Calculate scores
-for indx, school in enumerate(schools):
-    scores:list[float] = []
+try:
+    for indx, school in enumerate(schools):
+        scores:list[float] = []
 
-    for article in school["articles"]:
-        scores.append( determine_polarity( translate( article) ) )
+        for article in school["articles"]:
+            scores.append( determine_polarity( translate( article) ) )
 
-    score = sum(scores) / len(scores)
+        score = sum(scores) / len(scores)
 
-    # Save score
-    schools[indx]["sentiment_score"] = score
-
-# Save data
-with open("schools.json", "w", encoding="utf-8") as f:
-    f.write(json.dumps(schools, ensure_ascii=False))
+        # Save score
+        schools[indx]["sentiment_score"] = score
+finally:
+    # Save data
+    with open("schools.json", "w", encoding="utf-8") as f:
+        f.write(json.dumps(schools, ensure_ascii=False))

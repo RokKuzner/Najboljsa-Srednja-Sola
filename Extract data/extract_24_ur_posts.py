@@ -25,6 +25,13 @@ try:
         driver.get(search_url)
 
         article_elements = driver.find_elements(By.CSS_SELECTOR, "main.main div a.group")
+
+        # Extract article links
+        article_links = [element.get_attribute("href") for element in article_elements]
+        
+        # Save to school data
+        school["articles"] = article_links
+        schools[indx] = school
 except Exception as e:
     print("Exception:", e)
 finally:

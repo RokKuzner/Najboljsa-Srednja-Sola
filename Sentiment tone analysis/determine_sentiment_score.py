@@ -16,3 +16,7 @@ for indx, school in enumerate(schools):
 
     # Save score
     schools[indx]["sentiment_score"] = score
+
+# Save data
+with open("schools.json", "w", encoding="utf-8") as f:
+    f.write(json.dumps(schools, ensure_ascii=False))

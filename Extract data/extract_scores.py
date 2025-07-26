@@ -28,7 +28,7 @@ try:
 
         data.append({
             "name": " ".join( str( row_items[1].text ).strip().split() ),
-            "result": float(row_items[2].text.replace(",", "."))
+            "matura_score": float(row_items[2].text.replace(",", "."))
         })
 
     # Save data

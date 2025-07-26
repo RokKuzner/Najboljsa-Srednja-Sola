@@ -26,13 +26,24 @@ try:
         driver.get(search_url)
 
         article_elements = driver.find_elements(By.CSS_SELECTOR, "main.main div a.group")
-
-        # Extract article links
-        article_links = [element.get_attribute("href") for element in article_elements]
         
-        # Save to school data
-        school["articles"] = article_links
+        # Extract actual article content
+        articles:list[str] = []
+        for article_link in [article_element.get_attribute("href") for article_element in article_elements]:
+            if not article_link:
+                continue
+
+            driver.get(article_link)
+
+            content_elements = driver.find_elements(By.CSS_SELECTOR, "article p")[:-1] # Skip the last element, sice it is allways a non-content-realted warning
+
+            content = " ".join( [content_element.text.strip() for content_element in content_elements] )
+            if content: articles.append(content)
+
+        # Save content to school data
+        school["articles"] = articles
         schools[indx] = school
+
 except Exception as e:
     print("Exception:", e)
 finally:

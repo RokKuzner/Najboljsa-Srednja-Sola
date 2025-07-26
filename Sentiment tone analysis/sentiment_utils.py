@@ -13,7 +13,7 @@ def determine_polarity(text:str) -> float:
 def translate(text: str):
     if not os.environ.get('GOOGLE_APPLICATION_CREDENTIALS'):
         print("GOOGLE_APPLICATION_CREDENTIALS environment variable is not set")
-        return None
+        return ""
     
     translate_client = translate_v2.Client(target_language="en")
 
@@ -24,4 +24,4 @@ def translate(text: str):
         return translated_text
     except Exception as e:
         print(f"An error occurred during translation: {e}")
-        return None
+        return ""

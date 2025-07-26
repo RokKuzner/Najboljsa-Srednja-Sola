@@ -1,27 +1,24 @@
 from textblob import TextBlob
-import json
-from google.cloud import translate_v2
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
+from deep_translator import GoogleTranslator
+import time
 
 def determine_polarity(text:str) -> float:
     polarity:float = TextBlob(text).sentiment.polarity  # type: ignore
     return polarity
 
-def translate(text: str):
-    if not os.environ.get('GOOGLE_APPLICATION_CREDENTIALS'):
-        print("GOOGLE_APPLICATION_CREDENTIALS environment variable is not set")
-        return ""
-    
-    translate_client = translate_v2.Client(target_language="en")
-
+def translate_with_google_unofficial(text):
     try:
-        result = translate_client.translate(text, target_language="en")
-        translated_text = result["translatedText"]
+        translator = GoogleTranslator(source='sl', target='en')
 
-        return translated_text
+        chunk_size = 4500
+        translated_chunks = []
+        for i in range(0, len(text), chunk_size):
+            chunk = text[i:i + chunk_size]
+            translated_chunks.append(translator.translate(chunk))
+            time.sleep(0.2)
+        
+        return "".join(translated_chunks)
+    
     except Exception as e:
-        print(f"An error occurred during translation: {e}")
+        print(f"Error with unofficial Google Translator: {e}")
         return ""

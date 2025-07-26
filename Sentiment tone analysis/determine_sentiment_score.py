@@ -1,4 +1,4 @@
-from sentiment_utils import determine_polarity, translate
+from sentiment_utils import determine_polarity, translate_with_google_unofficial
 import json
 
 # Get school data
@@ -11,12 +11,21 @@ try:
         scores:list[float] = []
 
         for article in school["articles"]:
-            scores.append( determine_polarity( translate( article) ) )
+            try:
+                scores.append( determine_polarity( translate_with_google_unofficial( article ) ) )
+            except Exception as e:
+                print(f"Error when calculating sentiment scores: {e}")
+                continue
 
-        score = sum(scores) / len(scores)
+        if len(scores) != 0:
+            score = sum(scores) / len(scores)
+        else:
+            score = 0
 
         # Save score
         schools[indx]["sentiment_score"] = score
+except Exception as e:
+    print(f"Error when calculating sentiment scores - outside loop: {e}")
 finally:
     # Save data
     with open("schools.json", "w", encoding="utf-8") as f:

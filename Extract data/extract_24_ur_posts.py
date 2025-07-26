@@ -20,8 +20,11 @@ with open("schools.json", "r") as f:
     schools = json.load(f)
 
 try:
-    for school in schools:
+    for indx, school in enumerate(schools):
         search_url = "https://www.24ur.com/iskanje?q=" + urllib.parse.quote_plus(school["name"])
+        driver.get(search_url)
+
+        article_elements = driver.find_elements(By.CSS_SELECTOR, "main.main div a.group")
 except Exception as e:
     print("Exception:", e)
 finally:
